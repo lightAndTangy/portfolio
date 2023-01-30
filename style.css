@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--color-background);
+}
+
+/* Colour palettes */ 
+:root{
+  /* Light Theme Variables */
+  --color-text-light: #373f51;
+  --color-background-light: #EFEFF0;
+  --color-accent-light: #CEBEBE;
+
+  /* Dark Theme Variables */
+  --color-text-dark: #EFEFF0;
+  --color-background-dark: #454545;
+  --color-accent-dark: #8896AB;
+}
+
+.light-theme{
+  --color-text: var(--color-text-light);
+  --color-background: var(--color-background-light);
+  --color-accent: var(--color-accent-light);
+}
+
+.dark-theme{
+  --color-text: var(--color-text-dark);
+  --color-background: var(--color-background-dark);
+  --color-accent: var(--color-accent-dark);
+
+}
+
+
+/* Page */
+
+.wrapper {
+  max-width: 1800px;
+  margin: 0 120px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-col {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation */
+nav {
+  margin: 4em;
+}
+
+.primary-nav {
+  list-style: none;
+  display: flex;
+  gap: 4.1em;
+}
+
+.primary-nav a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 2.4rem;
+  position: relative;
+}
+
+.primary-nav a:hover:before {
+  width: 35%;
+  
+}
+
+.primary-nav a:before {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 1px;
+  border-bottom: 2px solid var(--color-text);
+  bottom: -6px;
+  transition: width 0.3s;
+}
+
+.primary-nav a.active:before {
+  position: absolute;
+  content: "";
+  width: 35%;
+  height: 1px;
+  border-bottom: 2px solid var(--color-text);
+  bottom: -6px;
+}
+
+/* Toggle bar */
+
+.toggle-wrapper {
+  display: flex;
+  gap: 1em;
+}
+
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 52px;
+	height: 27px;
+	background: var(--color-accent);
+	float: right;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	background: var(--color-background);
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: var(--color-background-light);
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 45px;
+}
+
+.sun-icon {
+  fill: var(--color-text);
+}
+
+.moon-icon {
+  fill: var(--color-text);
+}
+
+
+/* Home page content */
+.home-content-wrapper {
+  height: 100vh;
+}
+
+.home-intro {
+  color: var(--color-text);
+  font-size: 7.2rem;
+  margin: 0;
+  padding-top: 20vh;
+}
+
+.home-subheading {
+  color: var(--color-text);
+  font-size: 3.6rem;
+  width: 50vw;
+  margin: 0;
+  padding-top: 1em;
+}
+
+.cta-buttons {
+  margin: 5em 0;
+  display: flex;
+  gap: 10em;
+}
+
+.works-cta {
+  display: flex;
+  gap: 1em;
+  background-color: var(--color-accent);
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-text);
+  text-decoration: none;
+  border-radius: 1.4em;
+  padding: 1em 2em;
+  transition: transform 0.3s;
+}
+
+.works-cta:hover {
+  background-color: #B5A6A4;
+  transform: translateY(-10px);
+}
+
+.arrow-right {
+  fill: var(--color-text);
+}
+
+.resume-cta {
+  display: flex;
+  gap: 0.5em;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 1em 0;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+
+.resume-cta:hover {
+  transform: translateY(-10px);
+}
+
+.open-in-new{
+  fill: var(--color-text);
+}
+
+.arrow-down-wrapper {
+  fill: var(--color-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20em;
+}
+
+.arrow-text {
+  color: var(--color-text);
+  font-size: 2rem;
+}
+
+/* About */
+.about-wrapper {
+  height: 100vh;
+  margin: 0 120px;
+  display: flex;
+  gap: 20em;
+}
+
+.about-right-col {
+  width: 45%;
+}
+.about-title {
+  font-size: 7.2rem;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.about-me {
+  font-size: 1.8rem;
+  color: var(--color-text);
+  display: flex;
+  gap: 5em;
+  margin-top: 2em;
+}
+
+.about-content {
+  font-size: 1.8rem;
+  color: var(--color-text);
+  display: flex;
+  gap: 5em;
+  margin-top: 2em;
+}
+
+
+.about-left-col {
+  width: 45%;
+}
+
+/* Works */
+.works-wrapper {
+  height: 100vh;
+}
+
+
+/* Contact */
+.contact-wrapper {
+  height: 100vh;
+}
