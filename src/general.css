@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--color-background);
+  }
+  
+  /* Colour palettes */ 
+  :root{
+    /* Light Theme Variables */
+    --color-text-light: #373f51;
+    --color-background-light: #EFEFF0;
+    --color-accent-light: #CEBEBE;
+  
+    /* Dark Theme Variables */
+    --color-text-dark: #EFEFF0;
+    --color-background-dark: #454545;
+    --color-accent-dark: #8896AB;
+  }
+  
+  .light-theme{
+    --color-text: var(--color-text-light);
+    --color-background: var(--color-background-light);
+    --color-accent: var(--color-accent-light);
+  }
+  
+  .dark-theme{
+    --color-text: var(--color-text-dark);
+    --color-background: var(--color-background-dark);
+    --color-accent: var(--color-accent-dark);
+  
+  }
+  
+  
+  /* Page */
+  
+  .wrapper {
+    max-width: 1800px;
+    margin: 0 120px;
+  }
