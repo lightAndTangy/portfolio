@@ -3,37 +3,36 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
   
-  .right-col {
+.right-col {
     display: flex;
     align-items: center;
-  }
-  
-  /* Navigation */
-  nav {
+}
+
+/* Navigation */
+nav {
     margin: 4em;
-  }
-  
-  .primary-nav {
+}
+
+.primary-nav {
     list-style: none;
     display: flex;
     gap: 4.1em;
-  }
-  
-  .primary-nav a {
+}
+
+.primary-nav a {
     text-decoration: none;
     color: var(--color-text);
     font-size: 2.4rem;
     position: relative;
-  }
-  
-  .primary-nav a:hover:before {
+}
+
+.primary-nav a:hover:before {
     width: 35%;
-    
-  }
-  
-  .primary-nav a:before {
+}
+
+.primary-nav a:before {
     position: absolute;
     content: "";
     width: 0%;
@@ -41,71 +40,70 @@ header {
     border-bottom: 2px solid var(--color-text);
     bottom: -6px;
     transition: width 0.3s;
-  }
-  
-  .primary-nav a.active:before {
+}
+
+.primary-nav a.active:before {
     position: absolute;
     content: "";
     width: 35%;
     height: 1px;
     border-bottom: 2px solid var(--color-text);
     bottom: -6px;
-  }
-  
-  /* Toggle bar */
-  
-  .toggle-wrapper {
+}
+
+/* Toggle bar */
+
+.toggle-wrapper {
     display: flex;
     gap: 1em;
-  }
-  
-  input[type=checkbox]{
-      height: 0;
-      width: 0;
-      visibility: hidden;
-  }
-  
-  label {
-      cursor: pointer;
-      text-indent: -9999px;
-      width: 52px;
-      height: 27px;
-      background: var(--color-accent);
-      float: right;
-      border-radius: 100px;
-      position: relative;
-  }
-  
-  label:after {
-      content: '';
-      position: absolute;
-      top: 3px;
-      left: 3px;
-      width: 20px;
-      height: 20px;
-      background: var(--color-background);
-      border-radius: 90px;
-      transition: 0.3s;
-  }
-  
-  input:checked + label {
-      background: var(--color-background-light);
-  }
-  
-  input:checked + label:after {
-      left: calc(100% - 5px);
-      transform: translateX(-100%);
-  }
-  
-  label:active:after {
-      width: 45px;
-  }
-  
-  .sun-icon {
+}
+
+input[type=checkbox]{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 52px;
+    height: 27px;
+    background: var(--color-accent);
+    float: right;
+    border-radius: 100px;
+    position: relative;
+}
+
+label:after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background: var(--color-background);
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked + label {
+    background: var(--color-background-light);
+}
+
+input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label:active:after {
+    width: 45px;
+}
+
+.sun-icon {
     fill: var(--color-text);
-  }
-  
-  .moon-icon {
+}
+
+.moon-icon {
     fill: var(--color-text);
-  }
-  
+}

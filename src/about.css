@@ -4,65 +4,62 @@
     margin: 0 120px;
     display: flex;
     gap: 20em;
-  }
+}
   
-  .about-right-col {
+.about-right-col {
     width: 45%;
-  }
-  
-  
-  .about-title {
+}
+
+.about-title {
     font-size: 7.2rem;
     color: var(--color-text);
     margin: 0;
     margin-top: 2em;
-  }
-  
-  .about-separator {
+}
+
+.about-separator {
     margin-top: 50px;
     display: flex;
     align-items: center;
     gap: 5em;
-  }
-  
-  .separator-line {
+}
+
+.separator-line {
     margin: 0;
     width: 90%;
     height: 2px;
     background-color: var(--color-text);
-  }
-  
-  .separator-num {
+}
+
+.separator-num {
     font-size: 1.8rem;
     color: var(--color-text);
-  }
-  
-  
-  .about-me {
-    font-size: 1.8rem;
-    color: var(--color-text);
-    display: flex;
-    gap: 5em;
-    margin-top: 2em;
-  }
-  
-  .about-content {
+}
+
+.about-me {
     font-size: 1.8rem;
     color: var(--color-text);
     display: flex;
     gap: 5em;
     margin-top: 2em;
-  }
-  
-  
-  .about-left-col {
+}
+
+.about-content {
+    font-size: 1.8rem;
+    color: var(--color-text);
+    display: flex;
+    gap: 5em;
+    margin-top: 2em;
+}
+
+
+.about-left-col {
     width: 45%;
-  }
-  
-  .about-skills {
+}
+
+.about-skills {
     margin-top: 100px;
     font-size: 1.8rem;
     color: var(--color-text);
-  }
-  
-  
+}
+
